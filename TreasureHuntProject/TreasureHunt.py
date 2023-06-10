@@ -1,6 +1,7 @@
 """
 Find the Treasure Program
 """
+import sys
 
 
 # returns how many characters are in the file - BUT WHY?
@@ -381,10 +382,15 @@ def display_top_10(file_path):
 
 # MAIN PROGRAM #
 
+# Get command-line arguments
+treasure_path = sys.argv[1]
+records_path = sys.argv[2]
+temporary_records_path = sys.argv[3]
+
 # File Paths #
-treasure_path = 'C:/Users/Dell/Desktop/Treasure_File.txt'
-records_path = "C:/Users/Dell/Desktop/Treasure_Hunt_Records.csv"
-temporary_records_path = "C:/Users/Dell/Desktop/temp_records.csv"
+# treasure_path = 'C:/Users/Dell/Desktop/Treasure_File.txt'
+# records_path = "C:/Users/Dell/Desktop/Treasure_Hunt_Records.csv"
+# temporary_records_path = "C:/Users/Dell/Desktop/temp_records.csv"
 
 # Call hide_treasure() function, returns True if file is created, False if file already exists
 hide_treasure(treasure_path)
