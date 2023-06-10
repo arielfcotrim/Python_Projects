@@ -382,7 +382,7 @@ def display_top_10(file_path):
 
 # MAIN PROGRAM #
 
-# Get command-line arguments
+# Get command-line arguments to set paths to txt files
 treasure_path = sys.argv[1]
 records_path = sys.argv[2]
 temporary_records_path = sys.argv[3]
